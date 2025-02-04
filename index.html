@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh - CN">
+
+<head>
+    <meta charset="UTF - 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>播放</title>
+    <style>
+        /* 简单的样式设置，让按钮和图片居中显示 */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="j.png" alt="图片" width="300">
+    <button id="playButton">播放音乐</button>
+    <audio id="audioPlayer" src="j.mp3"></audio>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        playButton.addEventListener('click', function () {
+            audioPlayer.play();
+        });
+    </script>
+</body>
+
+</html>
