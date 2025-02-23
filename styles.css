@@ -7,9 +7,6 @@
 
 body {
     font-family: 'MiSans', Arial, sans-serif;
-}
-
-body {
     display: flex;
     height: 100vh;
     margin: 0;
@@ -226,4 +223,14 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.vertical-links a {
+    display: block;
+    margin-bottom: 10px; /* 可选：添加一些间距 */
+}
+
+.version-switch a {
+    display: block;
+    margin-bottom: 10px; /* 可选：添加一些间距 */
 }
